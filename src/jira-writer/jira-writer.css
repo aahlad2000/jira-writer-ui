@@ -1,0 +1,19 @@
+.jira-writer-component{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+
+.validtion-tag{
+    color: red;
+    font-size: small;
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+    width: 600px;
+}
