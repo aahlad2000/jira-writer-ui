@@ -10,15 +10,17 @@ const JiraWriter = () => {
   function checkValidation(enteredQuery) {
     if (enteredQuery.toLowerCase().includes("write a jira about")) {
       setValidation(true);
+      return true;
     } else {
       setValidation(false);
+      return false;
     }
   }
 
   async function handleClick() {
     const enteredQuery = queryRef.current.value;
-    checkValidation(enteredQuery);
-    if (!hideValidation) {
+    const shouldMakeAPICall = checkValidation(enteredQuery);
+    if (shouldMakeAPICall) {
       try {
         const response = await fetch(
           "http://localhost:8080/get/openAiResponse",
