@@ -17,3 +17,7 @@ textarea{
     height: 150px;
     width: 600px;
 }
+
+#copy-to-clipboard{
+    float: inline-end;
+}
