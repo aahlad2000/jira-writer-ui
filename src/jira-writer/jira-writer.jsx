@@ -62,15 +62,18 @@ const JiraWriter = () => {
 
   return (
     <div className="jira-writer-component">
-      <h1 className="heading">Jira Writer</h1>
+      <h1 className="heading">User-Story Writer</h1>
       <br></br>
       <div className="container" hidden={isLoading}>
         <div className="query-box">
-          <p>Describe what your Jira is about:</p>
-          <textarea ref={queryRef}></textarea>
+          <p>Describe what your user story:</p>
+          <textarea
+            ref={queryRef}
+            placeholder="Start the query with 'Write a Jira About'"
+          ></textarea>
         </div>
         <br></br>
-        <button onClick={handleClick}>SUBMIT</button>
+        <button onClick={handleClick}>Submit</button>
         <br></br>
         <br></br>
         <small hidden={hideValidation} className="validtion-tag">
@@ -83,7 +86,11 @@ const JiraWriter = () => {
           >
             Copy
           </button>
-          <textarea value={fetchedValue} readOnly></textarea>
+          <textarea
+            id="response-textbox"
+            value={fetchedValue}
+            readOnly
+          ></textarea>
         </div>
       </div>
       <div className="loading-spinner" hidden={!isLoading}>
