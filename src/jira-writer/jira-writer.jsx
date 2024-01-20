@@ -54,9 +54,9 @@ const JiraWriter = () => {
 
   function responseHandler(hideValidation) {
     if (hideValidation) {
-      setHideResultBox(false);
-    } else {
       setHideResultBox(true);
+    } else {
+      setHideResultBox(false);
     }
   }
 
