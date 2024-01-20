@@ -33,8 +33,12 @@ Backend Service : [jira-writer](https://github.com/aahlad2000/jira-writer)
 
 
 Validation in case of incorrect query:
+![Screenshot from 2024-01-20 22-08-19](https://github.com/aahlad2000/jira-writer-ui/assets/62693668/fdaa014e-4e14-46c5-bb48-e10b3d37da9c)
+
 
 <br>
 
 
 Expected Response:
+![Screenshot from 2024-01-20 22-08-05](https://github.com/aahlad2000/jira-writer-ui/assets/62693668/04068248-0503-4f0b-b13b-c5b55c3d7ff8)
+
